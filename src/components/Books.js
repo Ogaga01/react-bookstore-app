@@ -8,7 +8,7 @@ function Books() {
       <h2>Books</h2>
       <ul>
         <li>
-          <Book title="book-title" author="my_author" />
+          <Book title="48 Laws of Power" author="Robert Greene" />
 
         </li>
       </ul>
