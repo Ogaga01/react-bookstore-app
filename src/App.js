@@ -9,7 +9,7 @@ function App() {
       <div className="navbar">
         <h1 className="header-one">Bookstore</h1>
         <nav>
-          <Link className="navlink" to="/">Book</Link>
+          <Link className="navlink" to="/">Books</Link>
           <Link className="navlink" to="/Category">Category</Link>
         </nav>
       </div>
