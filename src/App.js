@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
+import Books from './components/Books';
 import './App.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         </nav>
       </div>
       <Routes>
-        <Route path="/" element={<Book />} />
+        <Route path="/" element={<Books />} />
         <Route path="/Category" element={<Category />} />
       </Routes>
     </>
