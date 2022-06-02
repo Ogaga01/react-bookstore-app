@@ -1,16 +1,22 @@
-import React from "react";
+import React from 'react';
 
-function Book(props){
-    const newData = props.bookStore;
-    return(
-       
-       <>
-       {newData.map(item=> <div key={item.id}>
-            <h2>{item.title}</h2>
-            <h5>{item.author}</h5>
-        </div>)}
-       </>
-    )
+function Book() {
+  const bookStore = {
+    id: 1,
+    title: '',
+    author: '',
+  };
+  return (
+
+    <>
+
+      <div key={bookStore.id}>
+        <h2>{bookStore.title}</h2>
+        <h5>{bookStore.author}</h5>
+      </div>
+
+    </>
+  );
 }
 
 export default Book;
