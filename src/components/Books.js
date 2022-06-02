@@ -8,8 +8,8 @@ function Books() {
       <h2>Books</h2>
       <ul>
         <li>
-          <Book />
-          <div><button type="button">Remove</button></div>
+          <Book title="book-title" author="my_author" />
+
         </li>
       </ul>
       <div><Form /></div>
