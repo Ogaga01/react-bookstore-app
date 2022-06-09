@@ -5,8 +5,8 @@ import Form from './Forms';
 import { fetchBook } from '../redux/books/books';
 
 function Books() {
-const dispatch = useDispatch()
-useEffect(() => dispatch(fetchBook()), [])
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(fetchBook()), []);
 
   const books = useSelector((state) => state.books);
   return (
