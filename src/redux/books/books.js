@@ -1,27 +1,28 @@
-const initialState = [
-  {
-    id: 1,
-    title: '48 Laws of Power',
-    author: 'Robert Greene',
-  },
-  {
-    id: 2,
-    title: 'Think and Grow Rich',
-    author: 'Robert Kiyosaki',
-  },
-  {
-    id: 3,
-    title: 'The Subtle Art',
-    author: 'Mark Manson',
-  },
-];
+const initialState = [];
+
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/L8ZmblKm0VJYsGRTbxG9'
+
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+const SHOW_BOOK = 'bookStore/books/SHOW_BOOK'
+
+export const showBook = (info) => ({
+  type: SHOW_BOOK,
+  info,
+})
+
+export const fetchBook = () => (
+  (dispatch) => {
+    fetch (`${baseURL}/books`)
+      .then((res) => res.json())
+      .then((json) => dispatch(showBook(json)) )
+  }
+);
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
-});
+})
 
 export const removeBook = (id) => ({
   type: REMOVE_BOOK,
@@ -34,6 +35,8 @@ const bookReducer = (state = initialState, action) => {
       return [...state, action.payload];
     case REMOVE_BOOK:
       return state.filter((book) => (book.id !== action.id));
+    case SHOW_BOOK:
+      return action.info || state
     default: return state;
   }
 };
