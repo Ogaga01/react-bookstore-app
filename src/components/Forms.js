@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
 function Form() {
   const [author, setAuthor] = useState('');
   const [title, setTitle] = useState('');
   const dispatch = useDispatch();
-  const books = useSelector((state) => state.books);
 
   const bookAuthor = (e) => {
     setAuthor(e.target.value);
@@ -22,7 +22,7 @@ function Form() {
       dispatch(
         addBook(
           {
-            id: books.length + 1,
+            id: uuidv4(),
             author,
             title,
           },
