@@ -8,7 +8,7 @@ body {
 }
 
 .header-one {
-  margin-left: 6.25rem;
+  margin-left: 10%;
   color: #0290ff;
   height: 2.313rem;
   font-family: inherit;
@@ -58,9 +58,9 @@ li {
 .display-book {
   align-items: center;
   display: flex;
-  width: 75rem;
+  width: 80%;
   height: 10.625rem;
-  margin-left: 6.25rem;
+  margin-left: 10%;
   margin-top: 2.313rem;
   background-color: #fff;
 }
@@ -260,8 +260,9 @@ li {
 }
 
 .form-section {
-  margin-left: 6.25rem;
-  margin-top: 7rem;
+  margin-left: 10%;
+  margin-top: 3rem;
+  width: 80%;
 }
 
 input {
@@ -274,7 +275,7 @@ input {
   margin: 1.188rem 2.125rem 0 0;
   outline: none;
   padding: 8px 15px;
-  width: 25%;
+  width: 22%;
 }
 
 .form-title {
@@ -282,6 +283,7 @@ input {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.18px;
+  margin-top: 1.5rem;
 }
 
 .add-book {
@@ -297,10 +299,33 @@ input {
   letter-spacing: 0.5px;
   margin-top: 10px;
   outline: none;
-  width: 19%;
+  width: 18%;
 }
 
 .cathy {
   margin-top: 6rem;
   justify-self: center;
+}
+
+.hr {
+  height: 2px;
+  background-color: #e8e8e8;
+}
+
+.circle-wrapp {
+  width: 60px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #e8e8e8;
+  margin-left: 43%;
+}
+
+.user {
+  margin-left: 15%;
+  width: 70%;
+  height: 40px;
+  background-color: #fff;
+  color: #0290ff;
+  margin-top: 10px;
 }

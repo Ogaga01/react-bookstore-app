@@ -41,6 +41,7 @@ function Form() {
   };
   return (
     <div className="form-section">
+      <div className="hr" />
       <h2 className="form-title">ADD NEW BOOK</h2>
       <form onSubmit={submit}>
         <input type="text" placeholder="Booktitle" value={title} onChange={bookTitle} required />
