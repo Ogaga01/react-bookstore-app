@@ -40,8 +40,8 @@ function Form() {
     }
   };
   return (
-    <div className='form-section'>
-      <h2>ADD NEW BOOK</h2>
+    <div className="form-section">
+      <h2 className="form-title">ADD NEW BOOK</h2>
       <form onSubmit={submit}>
         <input type="text" placeholder="Booktitle" value={title} onChange={bookTitle} required />
         <input type="text" placeholder="Author" value={author} onChange={bookAuthor} required />
