@@ -9,22 +9,54 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  
 }
 
 .header-one {
-  margin-left: 2%;
+  margin-left: 6.25rem;
+  color: #0290ff;
+  height: 2.313rem;
+  font-family: inherit;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 nav {
-  margin-right: 3%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: #fff;
+  top: 0;
+  margin-bottom: 50px;
+  height: 5.5rem;
+  bottom: 60px;
+
 }
 
 .navlink {
-  padding: 0 15px;
-  font-size: 1.5rem;
-  border-right: 2px solid black;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem;
+  font-family: inherit;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
 }
 
 li {
@@ -39,7 +71,10 @@ li {
   margin-left: 6.25rem;
   margin-top: 2.313rem;
   background-color: #fff;
-  
+}
+
+.display-book:first-of-type {
+  margin-top: 8rem;
 }
 
 .book-and-button {
