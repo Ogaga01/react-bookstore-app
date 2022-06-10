@@ -29,7 +29,7 @@ export const addBook = (payload) => (
         item_id: payload.id,
         title: payload.title,
         author: payload.author,
-        category: 'fiction',
+        category: payload.category,
       }),
     })
       .then(() => dispatch(fetchBook()));

@@ -11,13 +11,14 @@ function Books() {
   const books = useSelector((state) => state.books);
   return (
     <div>
-      <h2>Books</h2>
+
       {Object.keys(books).map((elem) => (
         <Book
           key={elem}
           id={elem}
           title={books[elem][0].title}
           author={books[elem][0].author}
+          category={books[elem][0].category}
         />
       ))}
       <div><Form /></div>
