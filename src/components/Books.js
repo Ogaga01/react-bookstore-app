@@ -11,7 +11,6 @@ function Books() {
   const books = useSelector((state) => state.books);
   return (
     <div>
-      <h2>Books</h2>
       {Object.keys(books).map((elem) => (
         <Book
           key={elem}
