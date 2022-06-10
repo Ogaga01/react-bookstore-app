@@ -299,3 +299,8 @@ input {
   outline: none;
   width: 19%;
 }
+
+.cathy {
+  margin-top: 6rem;
+  justify-self: center;
+}

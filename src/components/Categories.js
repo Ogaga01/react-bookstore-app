@@ -9,7 +9,8 @@ function Categories() {
     dispatch(checkStatus());
   };
   return (
-    <div>
+    <div className="cathy">
+      <h1>Categories</h1>
       <p>{cathy}</p>
       <button type="button" onClick={checkOurStatus}>Check Status</button>
     </div>
