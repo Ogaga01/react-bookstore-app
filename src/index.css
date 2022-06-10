@@ -3,7 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "RobotoSlab", sans-serif;
+  font-family: Montserrat, sans-serif;
+  background-color: #fafafa;
 }
 
 .navbar {
@@ -30,12 +31,143 @@ li {
   list-style-type: none;
 }
 
+.display-book {
+  align-items: center;
+  display: flex;
+  width: 75rem;
+  height: 10.625rem;
+  margin-left: 6.25rem;
+  margin-top: 2.313rem;
+  background-color: #fff;
+  
+}
+
+.book-and-button {
+  margin-left: 1.688rem;
+  width: 35%;
+}
+
+.category {
+  height: 1.125rem;
+  color: #121212;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.title {
+  height: 1.813rem;
+  width: 100%;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.author {
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.button-container {
+  margin-top: 1.313rem;
+}
+
+.submit-button {
+  height: 1.188rem;
+  padding-left: 0;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 300;
+  background-color: #fff;
+  border: none;
+  color: #4386bf;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  outline: none;
+  padding: 0 0.9rem 0 0;
+  border-right: .2px solid lightgrey;
+}
+
+.submit-button:last-of-type {
+  border-right: none;
+}
+
+.chapter-progress {
+  padding-left: 4.375rem;
+  border-left: 1px solid lightgrey;
+}
+
+.curr-chap {
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.chapter {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.update {
+  width: 11.5rem;
+  height: 2.063rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #0290ff;
+  color: #fff;
+}
+
+.update-text {
+  width: 8.938rem;
+  height: 1.125rem;
+  font-family: inherit;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 
 
 .book-progress {
   display: flex;
   margin: 0 30px;
+  width: 27%;
 }
 
 .circle-wrap {

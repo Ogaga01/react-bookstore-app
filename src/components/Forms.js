@@ -46,7 +46,7 @@ function Form() {
         <input type="text" placeholder="Booktitle" value={title} onChange={bookTitle} required />
         <input type="text" placeholder="Author" value={author} onChange={bookAuthor} required />
         <input type="text" placeholder="Category" value={category} onChange={bookCategory} required />
-        <button className='add-book' type="submit">Add</button>
+        <button className="add-book" type="submit">Add</button>
       </form>
     </>
   );

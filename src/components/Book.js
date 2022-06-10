@@ -12,7 +12,7 @@ function Book({
   };
   return (
     <div className="display-book">
-      <div className="book-button">
+      <div className="book-and-button">
         <div className="book-container">
           <p className="category">{category}</p>
           <h3 className="title">{title}</h3>
@@ -55,10 +55,10 @@ function Book({
           <p className="completed">Completed</p>
         </div>
       </div>
-      <div className='chapter-progress'>
-        <p className='curr-chap'>Current Chapter</p>
-        <p className='chapter'>Chapter 17</p>
-        <button type='button' className='update'>Update Progress</button>
+      <div className="chapter-progress">
+        <p className="curr-chap">Current Chapter</p>
+        <p className="chapter">Chapter 17</p>
+        <button type="button" className="update"><span className="update-text">Update Progress</span></button>
       </div>
     </div>
   );
