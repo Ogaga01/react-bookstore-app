@@ -18,6 +18,7 @@ function Books() {
           id={elem}
           title={books[elem][0].title}
           author={books[elem][0].author}
+          category={books[elem][0].category}
         />
       ))}
       <div><Form /></div>
